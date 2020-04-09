@@ -15,8 +15,8 @@
  */
 package com.xwy.four.chapter2.push.server;
 
-import com.study.netty.push.handler.NewConnectHandler;
-import com.study.netty.push.handler.WebSocketServerHandler;
+import com.xwy.four.chapter2.push.handler.NewConnectHandler;
+import com.xwy.four.chapter2.push.handler.WebSocketServerHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;

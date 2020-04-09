@@ -15,7 +15,7 @@
  */
 package com.xwy.four.chapter2.push.server;
 
-import com.study.netty.push.test.TestCenter;
+import com.xwy.four.chapter2.push.test.TestCenter;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;

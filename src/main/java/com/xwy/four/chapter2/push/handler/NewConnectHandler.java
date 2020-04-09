@@ -1,6 +1,6 @@
 package com.xwy.four.chapter2.push.handler;
 
-import com.study.netty.push.test.TestCenter;
+import com.xwy.four.chapter2.push.test.TestCenter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.handler.codec.http.FullHttpRequest;
@@ -9,7 +9,6 @@ import io.netty.util.AttributeKey;
 
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.atomic.AtomicInteger;
 
 // 新连接建立了
 public class NewConnectHandler extends SimpleChannelInboundHandler<FullHttpRequest> {

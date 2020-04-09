@@ -15,7 +15,7 @@
  */
 package com.xwy.four.chapter2.push.handler;
 
-import com.study.netty.push.test.TestCenter;
+import com.xwy.four.chapter2.push.test.TestCenter;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFuture;
