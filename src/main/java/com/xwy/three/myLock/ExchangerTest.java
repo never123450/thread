@@ -12,11 +12,12 @@ public class ExchangerTest {
             e.printStackTrace();
         }
 
-        String res = "12345";
+        String res = "12345a";
 
         try {
             System.out.println("等待对比结果。。。");
-            exchanger.exchange(res);
+            String exchange = exchanger.exchange(res);
+            System.out.println("a:"+exchange);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -32,11 +33,12 @@ public class ExchangerTest {
             e.printStackTrace();
         }
 
-        String res = "12345";
+        String res = "12345b";
 
         try {
             String value = exchanger.exchange(res);
             System.out.println("开始进行比对，比对结果为：" + value.equals(res));
+            System.out.println("b:"+value);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -53,6 +55,7 @@ public class ExchangerTest {
         new Thread(()->{
             exchangerTest.b(exchanger);
         }).start();
+
     }
 
 

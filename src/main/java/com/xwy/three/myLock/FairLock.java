@@ -1,5 +1,7 @@
 package com.xwy.three.myLock;
 
+import com.xwy.three.myLock.QueueObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
