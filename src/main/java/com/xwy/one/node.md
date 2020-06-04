@@ -165,3 +165,36 @@ volatile关键字
 4.讲解并发包的源码剖析
 5.actors，协程框架，disruptor
 6.RxJava
+
+
+
+    1.可见性
+    2.有序性
+    3.原子性
+
+    1.volatile修饰的变量，能保证前2者
+    2.CAS算法，CPU级别的同步指令，相当于乐观锁，它可以检测到其他线程对共享数据的变化情况
+
+CAS轻量级锁，带来的一个严重的问题，ABA问题
+
+
+    1. 想让类的属性操作具备原子性
+        1.1 volatile
+        1.2 非private，protected（如果是当前类也可以是protected
+        1.3 类型必须一致
+    2.不想使用锁（包括显示锁或者重量级锁Synchronized）
+    3.大量需要院子类想修饰的对象，相比较耗费内存
+    
+    
+    
+CountDownLatch  VS CyclicBarrier
+
+    1.CountDownLatch不能reset，而CyclicBarrier是可以循环使用
+    2.工作线程之间互不关心，工作线程必须等到同一个共同的点才去执行某个动作
+
+
+
+
+    
+
+
